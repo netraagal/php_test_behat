@@ -1,0 +1,14 @@
+# behat.yml
+default:
+    translation:
+        locale: en
+    extensions:
+        Behat\MinkExtension:
+            goutte:
+              guzzle_parameters:
+                verify: false
+                ssl.certificate_authority: false
+                curl.options:
+                  CURLOPT_SSL_VERIFYPEER: false
+                  CURLOPT_CERTINFO: false
+                  CURLOPT_TIMEOUT: 120

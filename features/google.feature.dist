@@ -1,0 +1,14 @@
+@google
+Feature: a first attempt to test behat
+     In order to see the good working of @tag website
+     As a guest user
+     I need to see the home page of google.fr
+
+Scenario: check the status code
+      Given  I am on "/"
+      Then   the response status code should be 200
+
+Scenario: check the visibility of the research button
+     Given  I am on "/"
+     When   I fill in "Google" for "q" 
+     Then   I should see "Google"
