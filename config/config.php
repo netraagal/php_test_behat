@@ -2,7 +2,7 @@
 
 $config =
     [
-        'littleextra'        => 'http://www.little-extra.fr',
+        'google'        => 'https://www.google.fr',
         'ddg'       => 'https://duckduckgo.com/',
     ];
 
